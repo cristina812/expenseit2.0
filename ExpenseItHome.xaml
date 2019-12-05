@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:ExpenseItmoraici"
       mc:Ignorable="d" 
       d:DesignHeight="350" d:DesignWidth="500"
-      Title="ExpenseIt - Home">
+      Title="Main Page">
 
     <Grid Margin="10,0,10,10">
         
@@ -73,7 +73,7 @@
         </Label>
 
         <Border Grid.Column="1" Grid.Row="1" Style="{StaticResource listHeaderStyle}">
-            <Label Style="{StaticResource listHeaderTextStyle}">Names</Label>
+            <Label Style="{StaticResource listHeaderTextStyle}">NameList</Label>
         </Border>
         <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2" 
          ItemsSource="{Binding Source={StaticResource ExpenseDataSource}, XPath=Person}"
@@ -81,7 +81,7 @@
         </ListBox>
 
         <!-- View report button -->
-        <Button Grid.Column="1" Grid.Row="3" Click="Button_Click" Style="{StaticResource buttonStyle}">View</Button>
+        <Button Grid.Column="1" Grid.Row="3" Click="Button_Click" Style="{StaticResource buttonStyle}">Next</Button>
 
 
     </Grid>
