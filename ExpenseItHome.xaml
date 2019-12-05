@@ -51,7 +51,7 @@
         
         
         <Grid.Background>
-            <ImageBrush ImageSource="watermark.png"  />
+            <ImageBrush ImageSource="00-13.jpg"  />
         </Grid.Background>
 
         <Grid.ColumnDefinitions>
