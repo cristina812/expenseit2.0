@@ -57,6 +57,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="230" />
             <ColumnDefinition />
+            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -68,20 +69,20 @@
 
         <!-- People list -->
 
-        <Label Grid.Column="1" Style="{StaticResource headerTextStyle}" >
+        <Label Grid.Column="2" Style="{StaticResource headerTextStyle}" >
             View Expense Report
         </Label>
 
-        <Border Grid.Column="1" Grid.Row="1" Style="{StaticResource listHeaderStyle}">
+        <Border Grid.Column="2" Grid.Row="1" Style="{StaticResource listHeaderStyle}">
             <Label Style="{StaticResource listHeaderTextStyle}">NameList</Label>
         </Border>
-        <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2" 
+        <ListBox Name="peopleListBox" Grid.Column="2" Grid.Row="2" 
          ItemsSource="{Binding Source={StaticResource ExpenseDataSource}, XPath=Person}"
          ItemTemplate="{StaticResource nameItemTemplate}">
         </ListBox>
 
         <!-- View report button -->
-        <Button Grid.Column="1" Grid.Row="3" Click="Button_Click" Style="{StaticResource buttonStyle}">Next</Button>
+        <Button Grid.Column="2" Grid.Row="3" Click="Button_Click" Style="{StaticResource buttonStyle}">Next</Button>
 
 
     </Grid>
